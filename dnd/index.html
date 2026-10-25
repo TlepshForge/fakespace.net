@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The campaign · fakespace</title>
+  <meta name="description" content="D&amp;D campaign dashboard for Zaid and friends: next session, party, recaps, quests, NPCs, and links.">
+  <meta name="theme-color" content="#f6f1e6">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="campaign">
+  <!--
+    Copy is not stored in this file.
+    Edit ../data/campaign.json. dashboard.js renders it as text.
+    Leave the repo's api/ folder free for a future Python service that can return that same JSON.
+  -->
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="desk">
+    <header class="mast">
+      <a class="brand" href="../index.html">fakespace</a>
+      <nav aria-label="Site">
+        <a href="../index.html">Home</a>
+        <span aria-current="page">The campaign</span>
+      </nav>
+    </header>
+    <div class="sheet">
+      <main id="content" tabindex="-1" aria-busy="true">
+        <p class="kicker">Dungeons &amp; Dragons</p>
+        <h1 id="campaign-name">Loading…</h1>
+        <p id="campaign-tagline" class="lede"></p>
+
+        <p id="data-banner" class="banner" role="status">Campaign notes load from data/campaign.json.</p>
+        <noscript>
+          <p class="banner">JavaScript is off, so this page can’t read data/campaign.json. The notes live in that file.</p>
+        </noscript>
+
+        <section>
+          <h2>Overview</h2>
+          <p id="overview" class="prose">Loading…</p>
+        </section>
+
+        <div class="split">
+          <section class="panel panel-session" id="next-session" aria-busy="true">
+            <h2>Next session</h2>
+            <dl class="facts">
+              <div>
+                <dt>Date</dt>
+                <dd id="next-date">Loading…</dd>
+              </div>
+              <div>
+                <dt>Time</dt>
+                <dd id="next-time">Loading…</dd>
+              </div>
+              <div>
+                <dt>Where</dt>
+                <dd id="next-location">Loading…</dd>
+              </div>
+              <div>
+                <dt>Note</dt>
+                <dd id="next-note">Loading…</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="panel">
+            <h2>Party</h2>
+            <div class="table-wrap">
+              <table class="roster">
+                <caption class="visually-hidden">Party roster: character, player, class, and level</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Character</th>
+                    <th scope="col">Player</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Level</th>
+                  </tr>
+                </thead>
+                <tbody id="party" aria-busy="true">
+                  <tr>
+                    <td colspan="4">Loading…</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <section>
+          <h2>Session log</h2>
+          <ul class="log" id="sessions" aria-busy="true">
+            <li><p class="empty">Loading…</p></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Quests</h2>
+          <div class="split split-quests">
+            <section class="panel">
+              <h3 class="group-label" id="active-quests-heading">Active</h3>
+              <ul class="plain" id="quests-active" aria-labelledby="active-quests-heading" aria-busy="true">
+                <li><p class="empty">Loading…</p></li>
+              </ul>
+            </section>
+            <section class="panel">
+              <h3 class="group-label" id="completed-quests-heading">Completed</h3>
+              <ul class="plain" id="quests-completed" aria-labelledby="completed-quests-heading" aria-busy="true">
+                <li><p class="empty">Loading…</p></li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>Notable NPCs</h2>
+          <ul class="people" id="npcs" aria-busy="true">
+            <li><p class="empty">Loading…</p></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Useful links</h2>
+          <ul class="plain" id="links" aria-busy="true">
+            <li><p class="empty">Loading…</p></li>
+          </ul>
+        </section>
+      </main>
+      <footer class="colophon">
+        <p><a href="../index.html">fakespace</a> · campaign notes for the table</p>
+      </footer>
+    </div>
+  </div>
+  <script src="dashboard.js" defer data-campaign="../data/campaign.json"></script>
+</body>
+</html>

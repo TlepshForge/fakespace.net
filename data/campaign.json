@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "placeholder": true,
+  "_comment": "Dashboard copy for dnd/index.html. Replace each bracketed string. Set placeholder to false when the real notes are in. links[].url may be an http(s) URL, a mailto address, a relative path, or \"\". Keys starting with _ are notes. A future Python backend can serve this file unchanged.",
+  "campaign": {
+    "name": "[Campaign name]",
+    "tagline": "[One sentence: tone, place, or what the party is after]",
+    "overview": "[Two or three sentences. Where the game is set, what the party has been doing, and what is at stake.]"
+  },
+  "nextSession": {
+    "date": "[Weekday, Month D, YYYY]",
+    "time": "[H:MM – H:MM, timezone]",
+    "location": "[Table, city, or voice channel]",
+    "note": "[What to prep, or just show up]"
+  },
+  "party": [
+    {
+      "character": "[Character 1]",
+      "player": "[player handle]",
+      "class": "[Class]",
+      "level": "[Level]"
+    },
+    {
+      "character": "[Character 2]",
+      "player": "[player handle]",
+      "class": "[Class]",
+      "level": "[Level]"
+    },
+    {
+      "character": "[Character 3]",
+      "player": "[player handle]",
+      "class": "[Class]",
+      "level": "[Level]"
+    },
+    {
+      "character": "[Character 4]",
+      "player": "[player handle]",
+      "class": "[Class]",
+      "level": "[Level]"
+    }
+  ],
+  "sessions": [
+    {
+      "number": "[n]",
+      "date": "[Month D, YYYY]",
+      "title": "[Latest session title]",
+      "recap": "[A few sentences on what the party did, who they met, and what they left unfinished.]"
+    },
+    {
+      "number": "[n]",
+      "date": "[Month D, YYYY]",
+      "title": "[Previous session title]",
+      "recap": "[Shorter recap of the session before that.]"
+    },
+    {
+      "number": "[n]",
+      "date": "[Month D, YYYY]",
+      "title": "[Earlier session title]",
+      "recap": "[Earlier session. What changed, and what the table decided to follow next.]"
+    }
+  ],
+  "quests": {
+    "active": [
+      {
+        "name": "[Active quest 1]",
+        "detail": "[What done looks like, and who asked.]"
+      },
+      {
+        "name": "[Active quest 2]",
+        "detail": "[The lead the party is following.]"
+      }
+    ],
+    "completed": [
+      {
+        "name": "[Completed quest]",
+        "detail": "[How it ended.]"
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "name": "[NPC 1]",
+      "role": "[Patron, rival, shopkeep…]",
+      "note": "[One fact the party should remember.]"
+    },
+    {
+      "name": "[NPC 2]",
+      "role": "[Ally or obstacle]",
+      "note": "[Where they were last seen, and what they want.]"
+    },
+    {
+      "name": "[NPC 3]",
+      "role": "[Faction or town]",
+      "note": "[The impression they left on the party.]"
+    }
+  ],
+  "links": [
+    {
+      "label": "[Shared notes]",
+      "url": "",
+      "note": "[Doc, map, or character-sheet folder.]"
+    },
+    {
+      "label": "[Voice channel]",
+      "url": "",
+      "note": "[Where the table meets.]"
+    },
+    {
+      "label": "[Rules reference]",
+      "url": "",
+      "note": "[House rules, or the book you actually use.]"
+    }
+  ]
+}
